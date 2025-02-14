@@ -41,8 +41,10 @@ body {
 .birthdayCard.open .wrap-deco,
 .birthdayCard.open .wrap-decoTwo,
 .birthdayCard.open .plate {
-    display: none;
+    opacity: 0;  /* En lugar de display: none */
+    transition: opacity 0.5s ease-in-out;
 }
+
 
 .cardFront {
     position: relative;
