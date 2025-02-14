@@ -33,23 +33,14 @@ body {
     box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
 }
 
-.birthdayCard:hover .cardFront {
+.birthdayCard.open .cardFront {
     transform: rotateY(-160deg); 
 }
 
-.birthdayCard:hover .front-text {
-    display: none;
-}
-
-.birthdayCard:hover .wrap-deco {
-    display: none;
-}
-
-.birthdayCard:hover .wrap-decoTwo {
-    display: none;
-}
-
-.birthdayCard:hover .plate {
+.birthdayCard.open .front-text,
+.birthdayCard.open .wrap-deco,
+.birthdayCard.open .wrap-decoTwo,
+.birthdayCard.open .plate {
     display: none;
 }
 
@@ -263,3 +254,4 @@ body {
 #muteButton:hover {
     background-color: #e91e63;
 }
+

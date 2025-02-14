@@ -10,16 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }, { once: true });
 
-    // Función para mutear o activar la música
+    // Función para cambiar el texto del botón sin pausar la música
     muteButton.addEventListener("click", function (event) {
         event.stopPropagation(); // Evita que se dispare el evento de play del body
-        if (music.paused) {
-            music.play();
-            muteButton.textContent = "Mute";
-        } else {
-            music.pause();
-            muteButton.textContent = "¿Cómo vas a mutear este temazo? 🤖";
-        }
+        muteButton.textContent = "¿Cómo vas a mutear este temazo? 🤨";
     });
 
     // Agregar interacción a la tarjeta para abrir/cerrar con click
