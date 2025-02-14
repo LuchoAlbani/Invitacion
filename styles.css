@@ -15,12 +15,6 @@ body {
     font-style: normal; /* Asegura que la fuente no esté en cursiva */
 }
 
-/* Resto del código CSS */
-
-.birthdayCard.open {
-    transform: perspective(2500px) rotateY(-160deg);
-}
-
 .birthdayCard {
     width: 90%;
     max-width: 300px;
