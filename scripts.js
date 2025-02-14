@@ -1,7 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var muteButton = document.getElementById('muteButton');
+document.addEventListener("DOMContentLoaded", function () {
+    var music = document.getElementById("music");
 
-    muteButton.addEventListener("click", function() {
-        alert("MIRA QUE TE VOY A DEJAR MUTEAR ESTE TEMAZO AGUANTE DOMO ARIGATO MR ROBOTO...🤖");
+    // Esperar interacción del usuario antes de reproducir
+    document.body.addEventListener("click", function () {
+        if (music.paused) {
+            music.play();
+        }
+    }, { once: true }); // Solo se ejecuta una vez
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var card = document.querySelector(".birthdayCard");
+
+    card.addEventListener("click", function () {
+        this.classList.toggle("open"); // Agrega o quita la clase al hacer click
     });
 });

@@ -17,16 +17,17 @@ body {
 
 /* Resto del código CSS */
 
+.birthdayCard.open {
+    transform: perspective(2500px) rotateY(-160deg);
+}
 
 .birthdayCard {
-    position: relative;
-    width: 250px;
-    height: 350px;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transform: perspective(2500px);
-    transition: 4s;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 5 / 7; /* Mantiene la proporción */
 }
+
 
 .birthdayCard:hover {
     transform: perspective(2500px) rotate(5deg);
@@ -246,16 +247,19 @@ body {
 }
 
 #muteButton {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     background-color: #f15bb5;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
+    z-index: 1000; /* Asegura que esté sobre todo */
 }
+
 
 #muteButton:hover {
     background-color: #e91e63;
