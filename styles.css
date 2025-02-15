@@ -41,10 +41,8 @@ body {
 .birthdayCard.open .wrap-deco,
 .birthdayCard.open .wrap-decoTwo,
 .birthdayCard.open .plate {
-    opacity: 0;  /* En lugar de display: none */
-    transition: opacity 0.5s ease-in-out;
+    display: none;
 }
-
 
 .cardFront {
     position: relative;
@@ -75,7 +73,6 @@ body {
 
 .bday {
     position: relative;
-    font-family: arial;
     font-size: 35px;
     text-align: center;
     top: 163px;
