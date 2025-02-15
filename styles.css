@@ -12,7 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.happy, .toyou, .bday, p, .name, .wishes {
+.happy, .toyou, p, .name, .wishes {
     font-family: 'Roboto', sans-serif;
     font-style: normal; /* Asegura que la fuente no esté en cursiva */
 }
@@ -72,7 +72,6 @@ body {
 
 .bday {
     position: relative;
-    font-family: arial;
     font-size: 35px;
     text-align: center;
     top: 163px;
