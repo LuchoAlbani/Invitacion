@@ -1,3 +1,5 @@
+/* CSS básico de tu código */
+
 body {
     display: flex;
     align-items: center;
@@ -14,9 +16,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal; /* Asegura que la fuente no esté en cursiva */
 }
-
-/* Resto del código CSS */
-
 
 .birthdayCard {
     position: relative;
@@ -73,6 +72,7 @@ body {
 
 .bday {
     position: relative;
+    font-family: arial;
     font-size: 35px;
     text-align: center;
     top: 163px;
@@ -222,9 +222,10 @@ body {
     position: relative;
     top: -160px;
     transform: scale(0.7);
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
-.wishes p{
+.wishes p {
     position: relative;
     top: -100px;
     margin: 25px;
@@ -249,8 +250,6 @@ body {
     z-index: 1000; /* Asegura que esté sobre todo */
 }
 
-
 #muteButton:hover {
     background-color: #e91e63;
 }
-
